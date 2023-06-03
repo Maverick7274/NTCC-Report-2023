@@ -1,0 +1,134 @@
+\documentclass{report}[12pt]
+\usepackage[margin=2cm]{geometry} % Set the margins to 2.5cm on all sides
+\usepackage{lipsum} % For generating "Lorem Ipsum" text
+\usepackage{fancyhdr} % For custom headers
+\usepackage[hidelinks]{hyperref} % For hyperlinks
+\usepackage{graphicx} % For including images
+\usepackage{svg} % For including SVG images
+\usepackage{relsize} % For resizing text
+\usepackage{titlesec} % For customizing chapter titles
+\usepackage{titletoc} % For customizing the table of contents
+\usepackage{scalefnt} % For scaling fonts
+\usepackage[document]{ragged2e}
+\usepackage{setspace} % For customizing line spacing
+
+% Modern font setup
+\usepackage{fontspec}
+\setmainfont{Roboto}
+
+% Title and author information
+\title{\Huge\textbf{Ensuring Ethical Compliance in DevOps Implementation for Regulated Industries}}
+\author{\Large Neelanjan Mukherji}
+
+% Header setup
+\pagestyle{fancy}
+\fancyhf{} % Clear existing header/footer settings
+\fancyhead[R]{\nouppercase{\leftmark}} % Display chapter name (without chapter number) on the right side of the header
+\fancyfoot[R]{\thepage} % Display page number on the right side of the footer
+\renewcommand{\headrulewidth}{0.4pt} % Add horizontal line below the header
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{./Assets/Amity-Logo-Solo}\par
+    % \includesvg{./Assets/Amity-Logo-Solo}\par
+    \vspace*{0.1cm}
+    {\scshape\Huge \textbf{Non-Teaching Credit Course(NTCC)} \par}
+    {\scshape\Huge \textbf{Term Paper/Report[ETTP100]} \par}
+    {\scshape\LARGE Amity Unversity Greater Noida \par}
+    \vspace*{1cm}
+    {\LARGE Topic : \par}
+    \vspace*{0.3cm}
+    {\Huge\textbf{Ensuring Ethical Compliance in DevOps Implementation for Regulated Industries}}\par
+    \vspace{1cm}
+    {\Large Supervisor:}\par
+
+    {\Large \textbf{Mr. Bhanu Prakash Lohani \& Mr. Pradeep Kumar Kushwaha}}\par
+    {\Large Department of Computer Science And Engineering}\par
+    \vspace{1cm}
+    {\Large Submitted by:}\par
+    % \vspace{0.2cm}
+    {\Large \textbf{Neelanjan Mukherji}}\par
+    {\Large A41105221002}\par
+    \vspace{1cm}
+    {\Large B.Tech. (Computer Science Engineering)}\par
+    {\Large \textbf{Semester - V}}\par
+    % \vfill
+    % {\Large Date: \today}\par
+\end{titlepage}
+
+\tableofcontents
+
+% Abstract
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{Abstract/abstract.tex} % Abstract text is in a separate file for easier
+
+% Certificate
+\chapter*{Certificate}
+\addcontentsline{toc}{chapter}{Certificate}
+\input{Certificate/certificate.tex} % Certificate text is in a separate file for easier
+
+% Declaration of Submission
+\chapter*{Declaration of Submission}
+\addcontentsline{toc}{chapter}{Declaration of Submission}
+
+% Acknowledgement
+\chapter*{Acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowledgement}
+I would like to express my gratitude to...
+
+% Plagiarism Certificate
+\chapter*{Plagiarism Certificate}
+\addcontentsline{toc}{chapter}{Plagiarism Certificate}
+I hereby declare that the content of this report is original and does not infringe upon the intellectual property rights of any third party.
+
+
+% Chapters
+\input{Executive-Summary/Executive-Summary.tex}
+
+
+\chapter*{Introduction to DevOps in Regulated Industries}
+\addcontentsline{toc}{chapter}{Introduction to DevOps in Regulated Industries}
+
+\chapter*{Regulatory Framework and Compliance Standards}
+\addcontentsline{toc}{chapter}{Regulatory Framework and Compliance Standards}
+
+\chapter*{Understanding Ethical Issues in DevOps}
+\addcontentsline{toc}{chapter}{Understanding Ethical Issues in DevOps}
+
+\chapter*{Building an Ethical DevOps Culture}
+\addcontentsline{toc}{chapter}{Building an Ethical DevOps Culture}
+
+\chapter*{Implementing Ethical DevOps Practices}
+\addcontentsline{toc}{chapter}{Implementing Ethical DevOps Practices}
+
+\chapter*{Ensuring Compliance in DevOps Processes}
+\addcontentsline{toc}{chapter}{Ensuring Compliance in DevOps Processes}
+
+\chapter*{Ethical Considerations in DevOps Toolchain Selection}
+\addcontentsline{toc}{chapter}{Ethical Considerations in DevOps Toolchain Selection}
+
+\chapter*{Case Studies: Ethical DevOps Implementations in Regulated Industries}
+\addcontentsline{toc}{chapter}{Case Studies: Ethical DevOps Implementations in Regulated Industries}
+
+\chapter*{Ethical Compliance Assessment Framework}
+\addcontentsline{toc}{chapter}{Ethical Compliance Assessment Framework}
+
+\chapter*{Conclusion and Future Directions}
+\addcontentsline{toc}{chapter}{Conclusion and Future Directions}
+
+
+% Appendices
+
+\chapter*{Appendix}
+
+% References
+
+\chapter*{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+% Your references go here
+
+\end{document}

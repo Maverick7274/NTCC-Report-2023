@@ -12,13 +12,49 @@
 \usepackage[document]{ragged2e}
 \usepackage{setspace} % For customizing line spacing
 
+\usepackage{listings}
+\usepackage{xcolor}
 % Modern font setup
 \usepackage{fontspec}
+\usepackage{pdfpages}
 \setmainfont{Roboto}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
 
 % Title and author information
 \title{\Huge\textbf{Ensuring Ethical Compliance in DevOps Implementation for Regulated Industries}}
 \author{\Large Neelanjan Mukherji}
+
+% % Header setup
+% \pagestyle{fancy}
+% \fancyhf{} % Clear existing header/footer settings
+% \fancyhead[R]{\nouppercase{\leftmark}} % Display chapter name (without chapter number) on the right side of the header
+% \fancyfoot[R]{\thepage} % Display page number on the right side of the footer
+% \renewcommand{\headrulewidth}{0.4pt} % Add horizontal line below the header
+
 
 % Header setup
 \pagestyle{fancy}
@@ -26,6 +62,7 @@
 \fancyhead[R]{\nouppercase{\leftmark}} % Display chapter name (without chapter number) on the right side of the header
 \fancyfoot[R]{\thepage} % Display page number on the right side of the footer
 \renewcommand{\headrulewidth}{0.4pt} % Add horizontal line below the header
+
 
 \begin{document}
 
@@ -83,11 +120,15 @@ I would like to express my gratitude to...
 % Plagiarism Certificate
 \chapter*{Plagiarism Certificate}
 \addcontentsline{toc}{chapter}{Plagiarism Certificate}
+
 I hereby declare that the content of this report is original and does not infringe upon the intellectual property rights of any third party.
 
 
 % Chapters
 \input{Executive-Summary/Executive-Summary.tex}
+
+\input{Background/background.tex}
+
 
 
 \chapter*{Introduction to DevOps in Regulated Industries}
@@ -127,8 +168,10 @@ I hereby declare that the content of this report is original and does not infrin
 
 % References
 
-\chapter*{Bibliography}
-\addcontentsline{toc}{chapter}{Bibliography}
 % Your references go here
+
+\bibliographystyle{ieeetr}
+\bibliography{citation}
+\addcontentsline{toc}{chapter}{Bibliography}
 
 \end{document}

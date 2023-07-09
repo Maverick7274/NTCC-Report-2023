@@ -1,0 +1,44 @@
+\newpage
+\includesvg[width=0.2\linewidth]{./Assets/Kubernetes}
+\section*{Kubernetes}
+
+\begin{enumerate}
+    \item Kubernetes is an open-source container orchestration platform that simplifies the deployment, scaling, and management of containerized applications.
+    
+    \item It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation (CNCF).
+    
+    \item Kubernetes enables organizations to run applications consistently across different environments, from local development setups to production clusters.
+\end{enumerate}
+
+\subsection*{Key Components of Kubernetes}
+\begin{enumerate}
+    \item \textbf{Master Node}: The master node acts as the control plane for Kubernetes. It oversees the entire cluster and manages key components such as scheduling, scaling, and monitoring. It includes components like the API server, scheduler, and controller manager.
+
+    \item \textbf{Worker Nodes}: Worker nodes, also known as minions or worker machines, are the machines where containers are deployed and run. They execute the workload and communicate with the master node. Each worker node runs a Kubernetes agent called kubelet to manage the containers and report their status to the master node.
+
+    \item \textbf{Pods}: Pods are the fundamental units of deployment in Kubernetes. They represent one or more containers that are co-located and tightly coupled. Containers within a pod share the same network namespace, IP address, and storage volumes. Pods can be scaled horizontally, and Kubernetes ensures their distribution across worker nodes based on resource availability and scheduling rules.
+
+    \item \textbf{ReplicaSets}: ReplicaSets ensure the desired number of pods are running and maintain high availability. They define the number of replicas (identical copies) of a pod that should be available at any given time. If a pod fails, the ReplicaSet automatically replaces it to maintain the desired replica count.
+
+    \item \textbf{Services}: Services provide network connectivity and load balancing to pods. They abstract the underlying pods and provide a stable network endpoint for clients to access the application. Kubernetes supports different types of services, including ClusterIP (internal), NodePort (exposed on a specific node port), and LoadBalancer (external load balancer).
+
+    \item \textbf{Deployments}: Deployments manage the lifecycle of pods and provide declarative updates to application versions. They allow rolling updates and rollbacks, ensuring seamless updates without downtime. Deployments also define scaling behaviors, allowing horizontal scaling of pods based on metrics or manual intervention.
+
+\end{enumerate}
+
+\subsection*{Benefits of Kubernetes}
+\begin{enumerate}
+
+    \item \textbf{Scalability}: Kubernetes simplifies scaling applications by allowing horizontal scaling of pods. It automatically distributes pods across worker nodes based on resource availability and ensures that the desired number of replicas are running at all times. This scalability capability enables organizations to handle increased traffic and workload demands effectively.
+
+    \item \textbf{High Availability}: Kubernetes provides robust mechanisms for high availability. It automatically restarts failed containers, replaces failed pods, and ensures that the desired number of replicas are always available. This fault tolerance feature minimizes application downtime and improves overall system reliability.
+
+    \item \textbf{Portability}: Kubernetes offers a portable and consistent environment for deploying applications. It abstracts the underlying infrastructure, allowing applications to run consistently across different environments, including on-premises data centers, public clouds, and hybrid setups. This portability reduces vendor lock-in and provides flexibility in choosing deployment targets.
+
+    \item \textbf{Automation and Self-Healing}: Kubernetes automates various aspects of application management, including container placement, scaling, and updates. It monitors the health and performance of containers and takes corrective actions automatically. This self-healing capability ensures that applications remain in a healthy state and reduces the need for manual intervention.
+
+    \item \textbf{Ecosystem and Community}: Kubernetes has a vibrant and extensive ecosystem with a wide range of tools, extensions, and integrations. It benefits from a large community of contributors, ensuring continuous improvements, security updates, and best practices. This ecosystem support provides organizations with a wealth of resources to leverage when working with Kubernetes.
+
+\end{enumerate}
+
+Kubernetes is a powerful container orchestration platform that simplifies the management of containerized applications. Its key components, scalability, high availability, portability, automation, and vibrant ecosystem make it a popular choice for organizations seeking to deploy and manage applications at scale.

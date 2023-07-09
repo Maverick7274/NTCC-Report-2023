@@ -36,7 +36,7 @@
     breaklines=true,                 
     captionpos=b,                    
     keepspaces=true,                 
-    numbers=left,                    
+    numbers=left,
     numbersep=5pt,                  
     showspaces=false,                
     showstringspaces=false,
@@ -67,50 +67,51 @@
 \begin{document}
 
 % Title page
-\begin{titlepage}
-    \centering
-    \includegraphics[width=0.4\textwidth]{./Assets/Amity-Logo-Solo}\par
-    % \includesvg{./Assets/Amity-Logo-Solo}\par
-    \vspace*{0.1cm}
-    {\scshape\Huge \textbf{Non-Teaching Credit Course(NTCC)} \par}
-    {\scshape\Huge \textbf{Term Paper/Report[ETTP100]} \par}
-    {\scshape\LARGE Amity Unversity Greater Noida \par}
-    \vspace*{1cm}
-    {\LARGE Topic : \par}
-    \vspace*{0.3cm}
-    {\Huge\textbf{Ensuring Ethical Compliance in DevOps Implementation for Regulated Industries}}\par
-    \vspace{1cm}
-    {\Large Supervisor:}\par
+% \begin{titlepage}
+%     \centering
+%     % \includegraphics[width=0.4\textwidth]{./Assets/Amity-Logo-Solo}\par
+%     \includesvg[width=195pt]{./Assets/Amity-Logo-Solo}\par
+%     \vspace*{0.1cm}
+%     {\scshape\Huge \textbf{Non-Teaching Credit Course(NTCC)} \par}
+%     {\scshape\Huge \textbf{Term Paper/Report[ETTP100]} \par}
+%     {\scshape\LARGE Amity Unversity Greater Noida \par}
+%     \vspace*{1cm}
+%     {\LARGE Topic : \par}
+%     \vspace*{0.3cm}
+%     {\Huge\textbf{Ensuring Ethical Compliance in DevOps Implementation for Regulated Industries}}\par
+%     \vspace{1cm}
+%     {\Large Supervisor:}\par
 
-    {\Large \textbf{Mr. Bhanu Prakash Lohani \& Mr. Pradeep Kumar Kushwaha}}\par
-    {\Large Department of Computer Science And Engineering}\par
-    \vspace{1cm}
-    {\Large Submitted by:}\par
-    % \vspace{0.2cm}
-    {\Large \textbf{Neelanjan Mukherji}}\par
-    {\Large A41105221002}\par
-    \vspace{1cm}
-    {\Large B.Tech. (Computer Science Engineering)}\par
-    {\Large \textbf{Semester - V}}\par
-    % \vfill
-    % {\Large Date: \today}\par
-\end{titlepage}
+%     {\Large \textbf{Ms. Shubhi Gupta}}\par
+%     % {\Large \textbf{Mr. Bhanu Prakash Lohani \& Mr. Pradeep Kumar Kushwaha}}\par
+%     {\Large Department of Computer Science And Engineering}\par
+%     \vspace{1cm}
+%     {\Large Submitted by:}\par
+%     % \vspace{0.2cm}
+%     {\Large \textbf{Neelanjan Mukherji}}\par
+%     {\Large A41105221002}\par
+%     \vspace{1cm}
+%     {\Large B.Tech. (Computer Science Engineering)}\par
+%     {\Large \textbf{Semester - V}}\par
+%     % \vfill
+%     % {\Large Date: \today}\par
+% \end{titlepage}
 
 \tableofcontents
 
 % Abstract
-\chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
-\input{Abstract/abstract.tex} % Abstract text is in a separate file for easier
+% \chapter*{Abstract}
+% \addcontentsline{toc}{chapter}{Abstract}
+% \input{Abstract/abstract.tex}
 
 % Certificate
-\chapter*{Certificate}
-\addcontentsline{toc}{chapter}{Certificate}
-\input{Certificate/certificate.tex} % Certificate text is in a separate file for easier
+% \chapter*{Certificate}
+% \addcontentsline{toc}{chapter}{Certificate}
+% \input{Certificate/certificate.tex}
 
 % Declaration of Submission
-\chapter*{Declaration of Submission}
-\addcontentsline{toc}{chapter}{Declaration of Submission}
+% \chapter*{Declaration of Submission}
+% \addcontentsline{toc}{chapter}{Declaration of Submission}
 
 % Acknowledgement
 \chapter*{Acknowledgement}
@@ -118,13 +119,21 @@
 I would like to express my gratitude to...
 
 % Plagiarism Certificate
-\chapter*{Plagiarism Certificate}
-\addcontentsline{toc}{chapter}{Plagiarism Certificate}
+% \chapter*{Plagiarism Certificate}
+% \addcontentsline{toc}{chapter}{Plagiarism Certificate}
 
-I hereby declare that the content of this report is original and does not infringe upon the intellectual property rights of any third party.
+% I hereby declare that the content of this report is original and does not infringe upon the intellectual property rights of any third party.
 
 
 % Chapters
+\input{Introduction/introduction}
+
+\input{Primary-Goal/primary-goal}
+
+\input{Scope/scope}
+
+\input{Tools-used/tools-used}
+
 \input{Executive-Summary/Executive-Summary.tex}
 
 \input{Background/background.tex}
